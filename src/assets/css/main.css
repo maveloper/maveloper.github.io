@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #909090;
+  overflow-x: hidden;
+}
+
+body {
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: left 30%;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background: url('/src/assets/images/avatar.png') no-repeat center top;
+  background-size: contain;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+button.region-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #FFFFFF;
+  background: linear-gradient(45deg, #8792EE, rgb(104, 166, 236));
+  border: 0px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+button.region-btn i {
+  font-size: 1.6em;
+  padding-right: 6px;
+}
+
+button.region-btn:hover {
+  background: linear-gradient(45deg,  #5588c2,#6c75be);
+}
+
+.region-popover {
+  display: flex;
+  min-width: 240px;
+  margin-top: 25px;
+  position: absolute;
+  z-index: 1;
+}
+
+.region-popover-content {
+  color: #7b828c;
+  background-color: #FFF;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.region-popover-arrow {
+  content: "";
+  bottom: 100%;
+  left: 9%;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent #FFF transparent;
+  position: absolute;
+  z-index: -1;
+}
+
+.region-popover-list li {
+  font-size: 0.9em;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.region-popover-list li:nth-child(1) {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.region-popover-content li:hover, .popover-active-item {
+  color: #6c75be;
+}
+
+.region-popover-active-item {
+  color: #5588c2;
+}
+
+p {
+  text-align: center;
+  padding: 10vh 25% 8vh 25%;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+@media (max-width: 498px) 
+{
+  p {
+    padding: 5vh 5% 5vh 5%;
+  }
+}
+
+footer {
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer a {
+  font-size: 2em;
+  color: #b4b4b4f2;
+  transition: color 0.5s;
+  padding: 0.3em;
+}
+
+footer a i:hover {
+  background: linear-gradient(45deg, #8792EE, rgb(104, 166, 236));
+  border: 0px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.glitch-image {
+  overflow: hidden;
+  position: relative;
+}
+
+@-webkit-keyframes glitch-anim-1 {
+  80% {
+    clip: rect(299px, 640px, 61px, 0);
+  }
+  84% {
+    clip: rect(226px, 640px, 87px, 0);
+  }
+  88% {
+    clip: rect(10px, 640px, 150px, 0);
+  }
+  92% {
+    clip: rect(235px, 640px, 292px, 0);
+  }
+  96% {
+    clip: rect(124px, 640px, 118px, 0);
+  }
+  100% {
+    clip: rect(224px, 640px, 178px, 0);
+  }
+}
+
+@keyframes glitch-anim-1 {
+  80% {
+    clip: rect(299px, 640px, 61px, 0);
+  }
+  84% {
+    clip: rect(226px, 640px, 87px, 0);
+  }
+  88% {
+    clip: rect(10px, 640px, 150px, 0);
+  }
+  92% {
+    clip: rect(235px, 640px, 292px, 0);
+  }
+  96% {
+    clip: rect(124px, 640px, 118px, 0);
+  }
+  100% {
+    clip: rect(224px, 640px, 178px, 0);
+  }
+}
+
+@-webkit-keyframes glitch-anim-2 {
+  72% {
+    clip: rect(193px, 640px, 77px, 0);
+  }
+  76% {
+    clip: rect(141px, 640px, 167px, 0);
+  }
+  80% {
+    clip: rect(84px, 640px, 100px, 0);
+  }
+  84% {
+    clip: rect(75px, 640px, 108px, 0);
+  }
+  88% {
+    clip: rect(251px, 640px, 225px, 0);
+  }
+  92% {
+    clip: rect(190px, 640px, 214px, 0);
+  }
+  96% {
+    clip: rect(22px, 640px, 218px, 0);
+  }
+  100% {
+    clip: rect(255px, 640px, 277px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  72% {
+    clip: rect(193px, 640px, 77px, 0);
+  }
+  76% {
+    clip: rect(141px, 640px, 167px, 0);
+  }
+  80% {
+    clip: rect(193px, 640px, 77px, 0);
+  }
+  84% {
+    clip: rect(75px, 640px, 108px, 0);
+  }
+  88% {
+    clip: rect(251px, 640px, 225px, 0);
+  }
+  92% {
+    clip: rect(190px, 640px, 214px, 0);
+  }
+  96% {
+    clip: rect(22px, 640px, 218px, 0);
+  }
+  100% {
+    clip: rect(255px, 640px, 277px, 0);
+  }
+}
+
+.glitch-image > .item {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.glitch-image > .item:nth-child(2),
+.glitch-image > .item:nth-child(3) {
+  clip: rect(0, 0, 0, 0);
+}
+
+.glitch-image > .item:nth-child(2) {
+  left: -10px;
+  filter: drop-shadow(-3px 0 0);
+  animation: glitch-anim-1 3s infinite linear;
+}
+
+.glitch-image > .item:nth-child(3) {
+  left: 2px;
+  animation: glitch-anim-2 4s infinite linear alternate-reverse;
+}

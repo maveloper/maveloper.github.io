@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="src/assets/images/avatar.png" />
+  
+  <title>May Santos - Software Engineer / Web Developer</title>
+
+  <link rel="stylesheet" type="text/css" href="src/assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="src/themes/dark-keyboard//css/theme.css" />
+  <link href="https://use.fontawesome.com/31ca61e258.css" media="all" rel="stylesheet">
+  <link rel="icon" type="image/png" href="src/assets/images/avatar.png"/>
+
+  <script async="" src="https://use.fontawesome.com/31ca61e258.js"></script>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <section class="avatar glitch-image">
+        <section class="avatar item glitch-image"></section>
+        <section class="avatar item glitch-image"></section>
+        <section class="avatar item glitch-image"></section>
+      </section>
+    </header>
+    
+    <section id="region">
+      <button class="region-btn" onclick="toggleRegionPopover()">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <span id="region-btn-label" i18n="changeRegionBTN">Trocar idioma</span>
+      </button>
+      
+      <section class="hidden region-popover">
+        <div class="region-popover-arrow"></div>
+        <section class="region-popover-content">
+          <ul class="region-popover-list"></ul>
+        </section>
+      </section>
+    </section>
+    
+    <p i18n="bio">
+      Hello, I'm a very curious person and passionate about creations, interactivity on multiplatforms and solve problems. I'm enthusiastic about technologies, clean codes, DevOps, behavioral methodology and photography. Currently I'm focused on JS, NodeJS, ReactJS and React Native development, but I'm open to learning everything that is needed to improve myself and help to build a better product.<br><br>Some of my soft Skills : Communicative, cognitively flexible, multifocal, creative, organized and analytical.
+    </p>
+
+    <footer>
+      <a href="https://github.com/maveloper" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>    
+
+      <a href="https://twitter.com/mavlprdev" target="_blank">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/maveloper" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+
+      <a href="mailto:mavcode@outlook.com" target="_blank">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+    </footer>
+  </div>
+  <script src="src/i18n/i18n.js"></script>
+  <script src="src/index.js"></script>
+</body>
+</html>
